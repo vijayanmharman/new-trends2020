@@ -60,97 +60,6 @@ $("#vertical-darrow").click(function () {
 // PS CLICK DOWN ARROW END
 
 
-// MAIN SUBMENU INTERATION START
-$("#mt-macro-trends").click(function () {
-  $(".dropdown-menu").removeClass("show");
-  $("html, body").animate(
-    {
-      scrollTop: $("#mt-economic-rebalance").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-
-$("#mt-covidimpact").click(function () {
-  $(".dropdown-menu").removeClass("show");
-  $("html, body").animate(
-    {
-      scrollTop: $("#mt-covid-impact").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-
-
-$("#ps-markettrends").click(function () {
-  $(".dropdown-menu").removeClass("show");
-  $("html, body").animate(
-    {
-      scrollTop: $("#market-trend-tab").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-
-$("#ps-covidimpact").click(function () {
-  $(".dropdown-menu").removeClass("show");
-  $("html, body").animate(
-    {
-      scrollTop: $("#covidSection").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-
-$("#cc-globaloutlook").click(function () {
-  $(".dropdown-menu").removeClass("show");
-  $("html, body").animate(
-    {
-      scrollTop: $("#globalSection").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-
-$("#cc-trendsimpact").click(function () {
-  $(".dropdown-menu").removeClass("show");
-  $("html, body").animate(
-    {
-      scrollTop: $("#caseSection").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-
-
-
-
-
-// MAIN SUBMENU INTERATION END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // CC CTAs START
 
 $("#cc-connectivity").click(function () {
@@ -508,8 +417,8 @@ window.onload = function () {
   lax.setup() // init
 
   const updateLax = () => {
-    lax.update(window.scrollY)
-    window.requestAnimationFrame(updateLax)
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
   }
 
   window.requestAnimationFrame(updateLax)
@@ -525,24 +434,3 @@ $("#covidClick").click(function () {
   );
   return false;
 });
-
-
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 12000) {
-    $("#scrollTopCar").fadeIn();
-  } else {
-    $("#scrollTopCar").fadeOut();
-  }
-  return false;
-});
-
-$("#scrollTopCar").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $("#marketSection").offset().top,
-    },
-    2000,
-  );
-  return false;
-});
-

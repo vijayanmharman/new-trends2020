@@ -46,6 +46,7 @@
 
 .navbar-nav .nav-item {
     margin-right: 20px;
+    position: relative;
 }
 
 .pagescroll-logo-size {

@@ -82,15 +82,6 @@ html {
   position: relative;
 }
 
-.nav-item.active:after {
-  content: '';
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: -5px;
-  border-bottom: solid 3px white;
-}
-
 .hcs-market-trends {
   position: relative;
 }
@@ -334,7 +325,7 @@ html {
   top: 0;
   right: 0;
   width: 57%;
-  padding: 50px 10%;
+  /* padding: 50px 10%; */
   background: #362F29;
 }
 
@@ -421,7 +412,7 @@ html {
   top: 0;
   left: 0;
   width: 56%;
-  padding: 50px;
+  /* padding: 50px; */
   background: #362F29;
 }
 
